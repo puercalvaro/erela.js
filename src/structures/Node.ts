@@ -110,8 +110,8 @@ export class Node {
       port: 2333,
       password: "youshallnotpass",
       secure: false,
-      retryAmount: 5,
-      retryDelay: 30e3,
+      retryAmount: Number.MAX_SAFE_INTEGER, //changed to max
+      retryDelay: Number.MAX_SAFE_INTEGER, //changed to max
       ...options,
     };
 
